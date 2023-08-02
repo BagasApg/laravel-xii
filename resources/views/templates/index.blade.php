@@ -27,7 +27,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Container - Layouts | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>@yield('title')</title>
 
     <meta name="description" content="" />
 
@@ -185,11 +185,12 @@
 
             <div class="container-xxl flex-grow-1 container-p-y">
               <!-- Layout Demo -->
-              <div class="layout-demo-wrapper">
-                @yield('content')
+
+               @yield('content')
+    
+
               </div>
               <!--/ Layout Demo -->
-            </div>
             <!-- / Content -->
 
             <!-- Footer -->
@@ -198,9 +199,9 @@
                 <div class="mb-2 mb-md-0">
                   ©
                   <script>
-                    document.write(new Date().getFullYear());
+                      document.write(new Date().getFullYear());
                   </script>
-                   - BagasAp
+                   - Baguette Studios
                 </div>
                 <div>
                   <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
@@ -236,14 +237,14 @@
     </div>
     <!-- / Layout wrapper -->
 
-    <div class="buy-now">
+    {{-- <div class="buy-now">
       <a
         href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/"
         target="_blank"
         class="btn btn-danger btn-buy-now"
         >Upgrade to Pro</a
       >
-    </div>
+    </div> --}}
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->

@@ -76,19 +76,19 @@
             </li>
             <li class="menu-item {{ (Route::current()->getName() == 'siswa') ? 'active' : '' }}">
               <a href="{{ route('siswa') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <i class='menu-icon tf-icons bx bxs-user-account'></i>
                 <div data-i18n="Analytics">Siswa</div>
               </a>
             </li>
             <li class="menu-item {{ (Route::current()->getName() == 'projects') ? 'active' : '' }}">
               <a href="{{ route('projects') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <i class="menu-icon tf-icons bx bxs-file-blank"></i>
                 <div data-i18n="Analytics">Projects</div>
               </a>
             </li>
             <li class="menu-item {{ (Route::current()->getName() == 'contact') ? 'active' : '' }}">
               <a href="{{ route('contact') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <i class="menu-icon tf-icons bx bxs-contact"></i>
                 <div data-i18n="Analytics">Contact</div>
               </a>
             </li>

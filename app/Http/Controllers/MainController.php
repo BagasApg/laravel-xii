@@ -13,7 +13,12 @@ class MainController extends Controller
 
     public function siswa()
     {
-        return view('siswa');
+        return view('siswa.siswa');
+    }
+
+    public function siswa_tambah()
+    {
+        return view('siswa.siswatambah');
     }
 
     public function projects()
