@@ -31,6 +31,9 @@
 
     <meta name="description" content="" />
 
+    {{-- punya gweh --}}
+    <link rel="stylesheet" href="../assets/css/style.css">
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
 
@@ -61,6 +64,7 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../assets/js/config.js"></script>
+    <script src="../assets/vendor/js/feather.js"></script>
   </head>
 
   <body>
@@ -200,6 +204,7 @@
                   ©
                   <script>
                       document.write(new Date().getFullYear());
+                      feather.replace();
                   </script>
                    - Baguette Studios
                 </div>
