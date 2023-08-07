@@ -5,7 +5,7 @@
 @section('content')
     <div class="m-1 mb-3">
         <div class="d-flex align-items-center">
-            <a href="/projects" class="text-decoration-none text-black ">
+            <a href="/contact" class="text-decoration-none text-black ">
                 <div class="d-flex align-items-center back">
 
 
@@ -18,7 +18,7 @@
     </div>
     <div class="card">
         <div class="m-4">
-            <h4>Edit Project</h4>
+            <h4>Edit Contact</h4>
             {{-- <div class="row">
             <div class="col-md-6">
                 <div class="">
@@ -53,11 +53,11 @@
                 </div>
             </div>
 
-        </div> --}}
+            </div> --}}
             <div class="row">
                 <div class="">
                     <label for="defaultFormControlInput" class="form-label">Nama</label>
-                    <input type="text" class="form-control" id="defaultFormControlInput" value="Trinity"
+                    <input type="text" class="form-control" id="defaultFormControlInput" value="Redddsss"
                         aria-describedby="defaultFormControlHelp" />
                     <div id="defaultFormControlHelp" class="form-text">
 
@@ -67,12 +67,26 @@
             </div>
             <div class="row">
                 <div class="">
-                    <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" value="The start of the end"></textarea>
+                    <label for="defaultFormControlInput" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="defaultFormControlInput" value="bagas.arianto@eveger.com"
+                        aria-describedby="defaultFormControlHelp" />
+                    <div id="defaultFormControlHelp" class="form-text">
+
+                    </div>
+
+                </div>
+                <div class="">
+                    <label for="defaultFormControlInput" class="form-label">Link</label>
+                    <input type="text" class="form-control" id="defaultFormControlInput" value="https://instagram.com"
+                        aria-describedby="defaultFormControlHelp" />
+                    <div id="defaultFormControlHelp" class="form-text">
+
+                    </div>
+
                 </div>
             </div>
             <div class="mt-3 add-button">
-                <div class="btn btn-success">Tambah</div>
+                <div class="btn btn-success">Edit</div>
             </div>
         </div>
 

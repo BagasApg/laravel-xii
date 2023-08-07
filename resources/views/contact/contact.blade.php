@@ -20,12 +20,12 @@
             <div class="card btn contact-cards">
                 <div class="btn card-body text-start p-3">
                     <a href="http://instagram.com">
-                        <div class="d-flex flex-row gap-3 align-items-center">
+                        <div class="d-flex flex-row gap-3 align-items-center text-black">
 
                             <i style="width: 32px; height: 32px" data-feather="instagram"></i>
                             <div class="col">
                                 <p class="m-0">Bagas Arianto</p>
-                                <p class="m-0 form-text">Instagram</p>
+                                <p class="m-0 form-text" style="color: #E1306C">Instagram</p>
                             </div>
                         </div>
                     </a>
@@ -33,13 +33,13 @@
             </div>
             <div class="card btn contact-cards">
                 <div class="btn card-body text-start p-3">
-                    <a href="http://instagram.com">
-                        <div class="d-flex flex-row gap-3 align-items-center">
+                    <a href="http://youtube.com">
+                        <div class="d-flex flex-row gap-3 align-items-center text-black">
 
                             <i style="width: 32px; height: 32px" data-feather="youtube"></i>
                             <div class="col">
                                 <p class="m-0">Reddssss</p>
-                                <p class="m-0 form-text">Youtube</p>
+                                <p class="m-0 form-text" style="color :#FF0000">Youtube</p>
                             </div>
                         </div>
                     </a>
@@ -48,12 +48,12 @@
             <div class="card btn contact-cards">
                 <div class="btn card-body text-start p-3">
                     <a href="http://twitch.com">
-                        <div class="d-flex flex-row gap-3 align-items-center">
+                        <div class="d-flex flex-row gap-3 align-items-center text-black">
 
                             <i style="width: 32px; height: 32px" data-feather="twitch"></i>
                             <div class="col">
                                 <p class="m-0">Redddsss</p>
-                                <p class="m-0 form-text">Twitch</p>
+                                <p class="m-0 form-text" style="color:#6441a5">Twitch</p>
                             </div>
                         </div>
                     </a>
