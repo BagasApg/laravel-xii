@@ -2,3 +2,8 @@
     color: #8789ff;
 }
 
+.contact-cards:hover {
+    transform: translateY(-3px);
+    background-color: rgb(247, 247, 247);
+}
+
