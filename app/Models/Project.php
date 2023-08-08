@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
     use HasFactory;
+
+    protected $guarded = [
+        'id',
+        'timestamps'
+    ];
+
+    public function siswa(){
+        return $this->belongsTo(Siswa::class);
+    }
 }
