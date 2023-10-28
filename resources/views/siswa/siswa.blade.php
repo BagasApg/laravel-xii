@@ -2,19 +2,14 @@
 
 @section('title', 'Siswa')
 
-
 @section('content')
     <div class="card">
         <div class="card-header">
-            <h3 class="">Siswa</h3>
-
-
+            <h3 class="">siswa
+            </h3>
 
             <a href="/siswa/tambah">
                 <div class="btn btn-success">Tambah</div>
-            </a>
-            <a href="/siswa/edit">
-                <div class="btn btn-primary ms-2">Edit</div>
             </a>
 
         </div>
@@ -22,35 +17,34 @@
 
             <table class="table">
                 <tr>
-                    <th>ID</th>
+                    <th>#</th>
                     <th>Nama</th>
-                    <th>Kelas</th>
-                    <th>No Telp.</th>
-                    <th>Email</th>
+                    <th>About</th>
+                    <th>Photo</th>
+                    <th class="text-center">Aksi</th>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Bagas Arianto</td>
-                    <td>12 RPL 1</td>
-                    <td>085156810924</td>
-                    <td>bagas.arianto@eveger.com</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Bagas Arianto</td>
-                    <td>12 RPL 1</td>
-                    <td>085156810924</td>
-                    <td>bagas.arianto@eveger.com</td>
+                @foreach ($siswa as $data)
+                    <tr>
+                        <td>{{ $loop->iteration }}</td>
+                        <td>{{ $data->nama }}</td>
+                        <td>{{ $data->about }}</td>
+                        <td><img style="width:150px" src="storage/{{ $data->photo }}" alt=""></td>
+                        <td>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="/siswa/edit/{{ $data->id }}">
+                                    <button class="btn btn-primary">Edit</button>
+                                </a>
+                                <form action="/siswa/delete/{{ $data->id }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
 
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Bagas Arianto</td>
-                    <td>12 RPL 1</td>
-                    <td>085156810924</td>
-                    <td>bagas.arianto@eveger.com</td>
+                                    <button type="submit" class="btn btn-danger">Hapus</button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                @endforeach
 
-                </tr>
             </table>
         </div>
     </div>

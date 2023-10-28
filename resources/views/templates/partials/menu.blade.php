@@ -56,7 +56,7 @@
                   </g>
                 </svg>
               </span>
-              <span class="app-brand-text demo menu-text fw-bolder ms-2">Eveger</span>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">sneat</span>
             </a>
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -80,8 +80,8 @@
                 <div data-i18n="Analytics">Siswa</div>
               </a>
             </li>
-            <li class="menu-item {{ (Route::current()->getName() == 'projects') ? 'active' : '' }}">
-              <a href="{{ route('projects') }}" class="menu-link">
+            <li class="menu-item {{ (Route::current()->getName() == 'projects.index') ? 'active' : '' }}">
+              <a href="{{ route('projects.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bxs-file-blank"></i>
                 <div data-i18n="Analytics">Projects</div>
               </a>

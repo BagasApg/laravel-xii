@@ -4,61 +4,66 @@
 
 
 @section('content')
-
     <div class="card">
         <div class="m-3 mb-0">
-                <div class="d-flex align-items-center">
-                    <a href="/siswa" class="text-decoration-none text-black ">
-                        <div class="d-flex align-items-center back">
-                            
-                            
-                            <i data-feather="chevron-left"></i>
-                            <p class="m-0">Back</p>
-                        </div>
-                    </a>
-                </div>
+            <div class="d-flex align-items-center">
+                <a href="/siswa" class="text-decoration-none text-black ">
+                    <div class="d-flex align-items-center back">
+
+
+                        <i data-feather="chevron-left"></i>
+                        <p class="m-0">Back</p>
+                    </div>
+                </a>
+            </div>
 
         </div>
         <div class="m-4">
-            <h4>Edit Siswa</h4>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="">
-                        <label for="defaultFormControlInput" class="form-label">Nama</label>
-                        <input type="text" class="form-control" id="defaultFormControlInput" value="Bagas Arianto" placeholder="Bagas Arianto"
-                            aria-describedby="defaultFormControlHelp" />
-                        <div id="defaultFormControlHelp" class="form-text">
-                        </div>
+            <form action="{{ route('siswa_update', $siswa->id) }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                @method('PUT')
+                <div class="row">
+                    <div class="col-md">
+                        <div class="">
+                            <label for="defaultFormControlInput" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="defaultFormControlInput"
+                                value="{{ $siswa->nama }}" name="nama" aria-describedby="defaultFormControlHelp" />
+                            <div id="defaultFormControlHelp" class="form-text">
+                            </div>
 
-                    </div>
-                    <div>
-                        <label for="defaultFormControlInput" class="form-label">Kelas</label>
-                        <input type="text" class="form-control" id="defaultFormControlInput" value="12 RPL 1" placeholder="12 RPL 1"
-                            aria-describedby="defaultFormControlHelp" />
-
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div>
-                        <label for="defaultFormControlInput" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="defaultFormControlInput"
-                            placeholder="bagas.arianto@eveger.com" value="bagas.arianto@eveger.com" aria-describedby="defaultFormControlHelp" />
-                        <div id="defaultFormControlHelp" class="form-text">
-                        </div>
-                    </div>
-                    <div>
-                        <label for="defaultFormControlInput" class="form-label">No. Telpon</label>
-                        <input type="email" class="form-control" id="defaultFormControlInput" placeholder="XXX2397182"
-                            aria-describedby="defaultFormControlHelp" value="085156810924" />
-                        <div id="defaultFormControlHelp" class="form-text">
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="">
+                            <label for="defaultFormControlInput" class="form-label">About</label>
+                            <input type="text" class="form-control" id="defaultFormControlInput"
+                                value="{{ $siswa->about }}" name="about" aria-describedby="defaultFormControlHelp" />
+                            <div id="defaultFormControlHelp" class="form-text">
+                            </div>
 
-            </div>
-            <div class="mt-3 add-button">
-                <div class="btn btn-success">Edit</div>
-            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="">
+                            <label for="defaultFormControlInput" class="form-label">Photo</label>
+                            <input type="file" class="form-control" id="defaultFormControlInput"
+                                 name="photo" aria-describedby="defaultFormControlHelp" />
+                            <div id="defaultFormControlHelp" class="form-text">
+                            </div>
+                            <img style="width: 250px" src="{{ asset('storage') }}/{{ $siswa->photo }}" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3 add-button">
+                    <button type="submit" class="btn btn-success">Edit</button>
+                </div>
+            </form>
+
         </div>
     </div>
 @endsection
